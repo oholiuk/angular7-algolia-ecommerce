@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { NgAisModule } from 'angular-instantsearch';
 
 import { AppComponent } from './app.component';
 import { SharedModule } from './_shared/shared.module';
@@ -8,7 +9,8 @@ import { SharedModule } from './_shared/shared.module';
     AppComponent
   ],
   imports: [
-    SharedModule
+    SharedModule,
+    NgAisModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
