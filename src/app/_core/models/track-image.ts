@@ -1,5 +1,5 @@
 export interface TrackImage {
-    heigth: number;
+    height: number;
     width: number;
     url: string;
 }

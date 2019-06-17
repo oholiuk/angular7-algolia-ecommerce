@@ -14,7 +14,7 @@ import { RouterModule } from '@angular/router';
         FormsModule,
         ReactiveFormsModule,
         HttpClientModule,
-        RouterModule
+        RouterModule,
     ]
 })
 
