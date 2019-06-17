@@ -1,0 +1,25 @@
+
+.album {
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+}
+    .album:hover {
+        cursor: pointer;
+    }
+
+
+.album img {
+    width: 170px;
+    border: 5px solid #000;
+}
+
+.album h2 {
+    margin: 0;
+}
+
+.album:hover img {
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}

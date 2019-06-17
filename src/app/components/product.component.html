@@ -1,4 +1,4 @@
-<article (click)="onClickAlbum()">
+<article (click)="onClickAlbum()" class="album">
     <img src="{{album.images[1].url}}" alt="">
     <h2>
         <ais-highlight attribute="artists[0].name" [hit]="album"></ais-highlight>: <ais-highlight attribute="name" [hit]="album"></ais-highlight>
