@@ -1,16 +1,25 @@
 import { NgModule } from '@angular/core';
-import { NgAisModule } from 'angular-instantsearch';
+import { NgAisModule, NgAisInstantSearchModule } from 'angular-instantsearch';
 
 import { AppComponent } from './app.component';
 import { SharedModule } from './_shared/shared.module';
 
+import { AppRoutingModule } from './app-routing.module';
+import { ProductListComponent } from './pages/product-list.component';
+import { ProductComponent } from './components/product.component';
+
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProductComponent,
+    ProductListComponent
   ],
   imports: [
     SharedModule,
-    NgAisModule.forRoot()
+    NgAisInstantSearchModule.forRoot(),
+    NgAisModule.forRoot(),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

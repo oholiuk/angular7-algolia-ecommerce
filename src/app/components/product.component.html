@@ -1,0 +1,9 @@
+<article (click)="onClickAlbum()">
+    <img src="{{album.images[1].url}}" alt="">
+    <h2>
+        <ais-highlight attribute="artists[0].name" [hit]="album"></ais-highlight>: <ais-highlight attribute="name" [hit]="album"></ais-highlight>
+    </h2>
+    <p>
+        {{ album.price | currency }} USD
+    </p>
+</article>

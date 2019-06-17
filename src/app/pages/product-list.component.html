@@ -1,0 +1,15 @@
+<ais-instantsearch [config]="algoliaConfig">
+    <ais-search-box></ais-search-box>
+    <ais-current-refinements [clearsQuery]="true" [transformItems]="translate"></ais-current-refinements>
+    
+    <ais-hits>
+      <ng-template let-hits="hits">
+        <div class="product-grid">
+            <div *ngFor="let album of hits" class="product">
+              <app-product [album]="album" [hit]="album"></app-product>
+            </div>
+        </div>
+      </ng-template>
+    </ais-hits>
+    <ais-pagination totalPages=20></ais-pagination>
+</ais-instantsearch>
