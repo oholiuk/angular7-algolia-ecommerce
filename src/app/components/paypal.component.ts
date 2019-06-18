@@ -10,11 +10,16 @@ export class PayPalComponent implements AfterViewChecked {
   @Input() finalAmount: number;
   addScript: boolean = false;
   paypalLoad: boolean = true;
+
+  
+  constructor() {
+    console.log(this.finalAmount);
+  }
   
   paypalConfig = {
     env: 'sandbox',
     client: {
-      sandbox: environment.paypal
+      sandbox: environment.paypal.client
     },
     commit: true,
     payment: (data, actions) => {
