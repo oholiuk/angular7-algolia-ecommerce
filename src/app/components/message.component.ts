@@ -7,8 +7,8 @@ import { MessageService } from '../_core/services/message.service';
   styleUrls: ['./message.component.scss']
 })
 export class MessageComponent implements OnInit {
-    private show: boolean = false;
-    private message: string;
+    show: boolean = false;
+    message: string;
 
     constructor(private messageService: MessageService) { }
 
