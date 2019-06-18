@@ -6,7 +6,7 @@ Demo
 [Live Demo](https://angular7-ecommerce.herokuapp.com/)
 
 Features:
-- [Ember Octane](https://octane-guides-preview.emberjs.com/release/getting-started/quick-start/)
+- [Angular 7](https://angular.io/start/)
 - [PayPal Checkout](https://developer.paypal.com/)
 - [Algolia for Storing and Querying](https://www.algolia.com/doc/guides/getting-started/how-algolia-works/)
 - [Formspree to send emails](https://formspree.io/)
@@ -17,8 +17,8 @@ You will need the following things properly installed on your computer.
 
 * [Git](https://git-scm.com/)
 * [Node.js](https://nodejs.org/)
-* [Yarn](https://yarnpkg.com/)
-* [Ember CLI](https://ember-cli.com/)
+* [NPM](https://www.npmjs.com/)
+* [Angular CLI](https://cli.angular.io/)
 * [Google Chrome](https://google.com/chrome/)
 
 ## Installation
@@ -45,11 +45,3 @@ You will need the following things properly installed on your computer.
 ### Deploying
 
 Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
