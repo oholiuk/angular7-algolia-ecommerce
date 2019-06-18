@@ -1,0 +1,28 @@
+<a [routerLink]="['/product-list']" class="btn-back" href="#">
+    <-
+</a>
+<h1>My Cart</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Price per unit</th>
+            <th>Acrions</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let album of albums">
+        <tr>
+            <td>{{ album?.id }}</td>
+            <td>{{ album?.name }}</td>
+            <td></td>
+            <td>{{ album?.price }}</td>
+            <td>
+                <button type="button" (click)="onRemoveItem()">X</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<app-paypal [finalAmount]="finalAmount"></app-paypal>

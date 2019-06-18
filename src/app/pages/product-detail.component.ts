@@ -3,6 +3,8 @@ import { Album } from '../_core/models';
 import { ActivatedRoute } from '@angular/router';
 import { AngoliaSearchService } from '../_core/services/algolia-search.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { CartService } from '../_core/services';
+import { MessageService } from '../_core/services/message.service';
 
 @Component({
   selector: 'app-product-detail',
@@ -18,6 +20,8 @@ export class ProductDetailComponent implements OnInit  {
     constructor(
       private route: ActivatedRoute,
       private formBuilder: FormBuilder,
+      private cartService: CartService,
+      private messageService: MessageService,
       private algoliaSearchService: AngoliaSearchService) {
       
     }
@@ -42,6 +46,8 @@ export class ProductDetailComponent implements OnInit  {
     }
 
     onSubmit() {
-      console.log('¡product submitted!');
+      
+      this.cartService.addAlbum(this.album);
+      this.messageService.showMessage('Agregado al carrito!');
     }
 }
