@@ -1,27 +1,55 @@
-# Angular7Ecommerce
+# angular7-ecommerce
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.4.
+This is an 100% frontend simple, but powerful, E-Commerce built with Angular 7.
 
-## Development server
+Demo
+[Live Demo](https://angular7-ecommerce.herokuapp.com/)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Features:
+- [Ember Octane](https://octane-guides-preview.emberjs.com/release/getting-started/quick-start/)
+- [PayPal Checkout](https://developer.paypal.com/)
+- [Algolia for Storing and Querying](https://www.algolia.com/doc/guides/getting-started/how-algolia-works/)
+- [Formspree to send emails](https://formspree.io/)
 
-## Code scaffolding
+## Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+You will need the following things properly installed on your computer.
 
-## Build
+* [Git](https://git-scm.com/)
+* [Node.js](https://nodejs.org/)
+* [Yarn](https://yarnpkg.com/)
+* [Ember CLI](https://ember-cli.com/)
+* [Google Chrome](https://google.com/chrome/)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Installation
 
-## Running unit tests
+* `git clone <repository-url>` this repository
+* `cd angular7-ecommerce`
+* `npm install`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Running / Development
 
-## Running end-to-end tests
+* `npm start`
+* Visit your app at [http://localhost:4200](http://localhost:4200).
+* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Running Tests
 
-## Further help
+* `npm test`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Building
+
+* `npm build` (development)
+* `npm build --prod` (production)
+
+### Deploying
+
+Specify what it takes to deploy your app.
+
+## Further Reading / Useful Links
+
+* [ember.js](https://emberjs.com/)
+* [ember-cli](https://ember-cli.com/)
+* Development Browser Extensions
+  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
+  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
