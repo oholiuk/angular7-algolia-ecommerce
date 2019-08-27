@@ -5,8 +5,8 @@ export const environment = {
     currency: 'USD'
   },
   algoliaConfig: {
-    apiKey: 'f9697d2eb91d79638d5331b8d644da6a',
-    appId: 'JJH2ZRV4CI',
+    apiKey: '5ffafb4b16a6afdb18b949267943f04f',
+    appId: '17CYH7CBH1',
     indexName: 'test_ANGULAR7ECOMMERCE',
     routing: true
   }
